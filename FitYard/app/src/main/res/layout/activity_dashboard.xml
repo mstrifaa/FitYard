@@ -9,28 +9,42 @@
         android:id="@+id/welcomeCard"
         android:layout_width="382dp"
         android:layout_height="174dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="544dp"
+        android:paddingStart="50dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="50dp"
+        app:barrierMargin="0dp"
+        app:cardBackgroundColor="#DF876C"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01">
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="86dp"
+            android:layout_width="106dp"
+            android:layout_height="56dp"
             tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="TextView" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/dietPlans"
         android:layout_width="144dp"
         android:layout_height="144dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="36dp"
         android:background="@color/reddishBlack"
-        android:backgroundTint="#FFFFFF"
+        app:cardBackgroundColor="#8C7D7D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeCard">
 
@@ -38,21 +52,21 @@
         <ImageView
             android:id="@+id/dietPlansImage"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/content_description_media"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/media" />
+            app:srcCompat="@drawable/diet_plans" />
 
         <TextView
             android:id="@+id/dietPlansCard"
             android:layout_width="144dp"
-            android:layout_height="37dp"
+            android:layout_height="44dp"
             android:layout_marginTop="100dp"
-            android:paddingTop="1dp"
+            android:paddingTop="3dp"
             android:text="@string/DietPlans"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/dietPlans"
@@ -65,30 +79,30 @@
         android:layout_width="144dp"
         android:layout_height="144dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/reddishBlack"
-        android:backgroundTint="#FFFFFF"
+        app:cardBackgroundColor="#8C7D7D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeCard">
 
         <ImageView
             android:id="@+id/nutritionGuideImage"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/content_description_media"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            app:srcCompat="@drawable/nutrition_guide" />
 
         <TextView
             android:id="@+id/nutritionGuideCard"
             android:layout_width="144dp"
-            android:layout_height="37dp"
+            android:layout_height="44dp"
             android:layout_marginTop="100dp"
-            android:paddingTop="1dp"
+            android:paddingTop="5dp"
             android:text="@string/NutritionGuide"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/nutritionGuide"
@@ -99,30 +113,31 @@
         android:id="@+id/workout"
         android:layout_width="144dp"
         android:layout_height="144dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:background="@color/reddishBlack"
+        app:cardBackgroundColor="#8C7D7D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dietPlans">
 
         <ImageView
             android:id="@+id/workoutImage"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/content_description_media"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/media" />
+            app:srcCompat="@drawable/workout" />
 
         <TextView
             android:id="@+id/workoutCard"
             android:layout_width="144dp"
-            android:layout_height="37dp"
+            android:layout_height="44dp"
             android:layout_marginTop="100dp"
             android:paddingTop="5dp"
             android:text="@string/workout"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#000000"
+            android:textColor="#FDFDFD"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/workout"
@@ -130,32 +145,35 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/BMICalculator"
         android:layout_width="144dp"
         android:layout_height="144dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/reddishBlack"
+        app:cardBackgroundColor="#8C7D7D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nutritionGuide">
 
         <ImageView
             android:id="@+id/BMICalculatorImage"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/content_description_media"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/media" />
+            app:srcCompat="@drawable/BMI" />
 
         <TextView
             android:id="@+id/BMICalculatorCard"
             android:layout_width="144dp"
-            android:layout_height="37dp"
+            android:layout_height="44dp"
             android:layout_marginTop="100dp"
+            android:background="#00FFFFFF"
             android:paddingTop="5dp"
             android:text="@string/BMICalculator"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/workout"
@@ -163,8 +181,8 @@
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
-        android:layout_width="419dp"
-        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -175,7 +193,8 @@
             android:id="@+id/bottom_navigation"
             style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="match_parent"
+            android:background="#9DD3EC"
             app:menu="@menu/bottom_navigation_menu"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="554dp" />
