@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitYard">
         <activity android:name=".calculateBMI"></activity>
-        <activity android:name=".Dashboard" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Dashboard" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
