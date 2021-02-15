@@ -33,4 +33,13 @@
     <string name="healthTips">Health Tips</string>
     <string name="userProfile">User Profile</string>
     <string name="remainders">Remainders</string>
+    <string name="welcomeText" />
+
+    <string name="lb">lb</string>
+    <string name="cm">cm</string>
+    <string name="inch">inch</string>
+    <string name="kg">kg</string>
+    <string name="calculate_my_bmi">Calculate my BMI</string>
+    <string name="calculate_your_bmi">Calculate your BMI</string>
+    <string name="enter_your_height">Enter your height</string>
 </resources>
